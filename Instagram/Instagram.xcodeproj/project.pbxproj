@@ -14,6 +14,10 @@
 		4665C5F31E1F118600FFD51D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4665C5F11E1F118600FFD51D /* LaunchScreen.storyboard */; };
 		4665C5FE1E1F118600FFD51D /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4665C5FD1E1F118600FFD51D /* InstagramTests.swift */; };
 		4665C6091E1F118600FFD51D /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4665C6081E1F118600FFD51D /* InstagramUITests.swift */; };
+		4665C61B1E1F128F00FFD51D /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6171E1F128F00FFD51D /* AWSS3.framework */; };
+		4665C61C1E1F128F00FFD51D /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6181E1F128F00FFD51D /* AWSDynamoDB.framework */; };
+		4665C61D1E1F128F00FFD51D /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6191E1F128F00FFD51D /* AWSCognito.framework */; };
+		4665C61E1E1F128F00FFD51D /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C61A1E1F128F00FFD51D /* AWSCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,11 @@
 		4665C6041E1F118600FFD51D /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4665C6081E1F118600FFD51D /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		4665C60A1E1F118600FFD51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4665C6171E1F128F00FFD51D /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = Frameworks/AWSS3.framework; sourceTree = "<group>"; };
+		4665C6181E1F128F00FFD51D /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = Frameworks/AWSDynamoDB.framework; sourceTree = "<group>"; };
+		4665C6191E1F128F00FFD51D /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = Frameworks/AWSCognito.framework; sourceTree = "<group>"; };
+		4665C61A1E1F128F00FFD51D /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Frameworks/AWSCore.framework; sourceTree = "<group>"; };
+		4665C61F1E1F12F400FFD51D /* Instagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instagram-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4665C61D1E1F128F00FFD51D /* AWSCognito.framework in Frameworks */,
+				4665C61E1E1F128F00FFD51D /* AWSCore.framework in Frameworks */,
+				4665C61C1E1F128F00FFD51D /* AWSDynamoDB.framework in Frameworks */,
+				4665C61B1E1F128F00FFD51D /* AWSS3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 		4665C5DC1E1F118600FFD51D = {
 			isa = PBXGroup;
 			children = (
+				4665C6161E1F122900FFD51D /* Frameworks */,
 				4665C5E71E1F118600FFD51D /* Instagram */,
 				4665C5FC1E1F118600FFD51D /* InstagramTests */,
 				4665C6071E1F118600FFD51D /* InstagramUITests */,
@@ -103,6 +117,7 @@
 				4665C5EF1E1F118600FFD51D /* Assets.xcassets */,
 				4665C5F11E1F118600FFD51D /* LaunchScreen.storyboard */,
 				4665C5F41E1F118600FFD51D /* Info.plist */,
+				4665C61F1E1F12F400FFD51D /* Instagram-Bridging-Header.h */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -123,6 +138,17 @@
 				4665C60A1E1F118600FFD51D /* Info.plist */,
 			);
 			path = InstagramUITests;
+			sourceTree = "<group>";
+		};
+		4665C6161E1F122900FFD51D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4665C6171E1F128F00FFD51D /* AWSS3.framework */,
+				4665C6181E1F128F00FFD51D /* AWSDynamoDB.framework */,
+				4665C6191E1F128F00FFD51D /* AWSCognito.framework */,
+				4665C61A1E1F128F00FFD51D /* AWSCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,10 +438,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5D6S47J43L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sdn.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Instagram/Instagram-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -425,10 +456,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5D6S47J43L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sdn.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Instagram/Instagram-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
