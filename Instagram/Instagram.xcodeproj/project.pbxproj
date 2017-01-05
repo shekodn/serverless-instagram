@@ -55,6 +55,7 @@
 		46763CE21E1EEE2B00517FC9 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = ../Frameworks/AWSCore.framework; sourceTree = "<group>"; };
 		46763CE31E1EEE2B00517FC9 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = ../Frameworks/AWSDynamoDB.framework; sourceTree = "<group>"; };
 		46763CE41E1EEE2B00517FC9 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = ../Frameworks/AWSS3.framework; sourceTree = "<group>"; };
+		46763CE91E1EEEA800517FC9 /* Instagram-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instagram-Bridge-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 				46763CB91E1EEC9800517FC9 /* Assets.xcassets */,
 				46763CBB1E1EEC9800517FC9 /* LaunchScreen.storyboard */,
 				46763CBE1E1EEC9800517FC9 /* Info.plist */,
+				46763CE91E1EEEA800517FC9 /* Instagram-Bridge-Header.h */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
