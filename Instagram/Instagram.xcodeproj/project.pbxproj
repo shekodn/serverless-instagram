@@ -18,6 +18,25 @@
 		4665C61C1E1F128F00FFD51D /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6181E1F128F00FFD51D /* AWSDynamoDB.framework */; };
 		4665C61D1E1F128F00FFD51D /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6191E1F128F00FFD51D /* AWSCognito.framework */; };
 		4665C61E1E1F128F00FFD51D /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C61A1E1F128F00FFD51D /* AWSCore.framework */; };
+		4665C6211E1F150400FFD51D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4665C6201E1F150400FFD51D /* GoogleService-Info.plist */; };
+		4665C6241E1F15E600FFD51D /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4665C6231E1F15E600FFD51D /* GoogleSignIn.bundle */; };
+		4665C6291E1F15F600FFD51D /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6251E1F15F600FFD51D /* GoogleAppUtilities.framework */; };
+		4665C62A1E1F15F600FFD51D /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6261E1F15F600FFD51D /* GoogleSignIn.framework */; };
+		4665C62B1E1F15F600FFD51D /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6271E1F15F600FFD51D /* GoogleSignInDependencies.framework */; };
+		4665C62C1E1F15F600FFD51D /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6281E1F15F600FFD51D /* GoogleSymbolUtilities.framework */; };
+		4665C62E1E1F165700FFD51D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C62D1E1F165700FFD51D /* AddressBook.framework */; };
+		4665C6301E1F165E00FFD51D /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C62F1E1F165E00FFD51D /* SafariServices.framework */; };
+		4665C6321E1F166600FFD51D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6311E1F166600FFD51D /* SystemConfiguration.framework */; };
+		4665C6341E1F16D900FFD51D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6331E1F16D900FFD51D /* libz.tbd */; };
+		4665C6361E1F16F000FFD51D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6351E1F16F000FFD51D /* libsqlite3.tbd */; };
+		4665C6371E1F17B500FFD51D /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6171E1F128F00FFD51D /* AWSS3.framework */; };
+		4665C6381E1F17B500FFD51D /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6171E1F128F00FFD51D /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4665C6391E1F17B500FFD51D /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6181E1F128F00FFD51D /* AWSDynamoDB.framework */; };
+		4665C63A1E1F17B500FFD51D /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6181E1F128F00FFD51D /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4665C63B1E1F17B500FFD51D /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6191E1F128F00FFD51D /* AWSCognito.framework */; };
+		4665C63C1E1F17B500FFD51D /* AWSCognito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6191E1F128F00FFD51D /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4665C63D1E1F17B500FFD51D /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C61A1E1F128F00FFD51D /* AWSCore.framework */; };
+		4665C63E1E1F17B500FFD51D /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C61A1E1F128F00FFD51D /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +55,23 @@
 			remoteInfo = Instagram;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4665C63F1E1F17B500FFD51D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4665C63C1E1F17B500FFD51D /* AWSCognito.framework in Embed Frameworks */,
+				4665C63E1E1F17B500FFD51D /* AWSCore.framework in Embed Frameworks */,
+				4665C63A1E1F17B500FFD51D /* AWSDynamoDB.framework in Embed Frameworks */,
+				4665C6381E1F17B500FFD51D /* AWSS3.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4665C5E51E1F118600FFD51D /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +92,17 @@
 		4665C6191E1F128F00FFD51D /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = Frameworks/AWSCognito.framework; sourceTree = "<group>"; };
 		4665C61A1E1F128F00FFD51D /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Frameworks/AWSCore.framework; sourceTree = "<group>"; };
 		4665C61F1E1F12F400FFD51D /* Instagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instagram-Bridging-Header.h"; sourceTree = "<group>"; };
+		4665C6201E1F150400FFD51D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4665C6231E1F15E600FFD51D /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		4665C6251E1F15F600FFD51D /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		4665C6261E1F15F600FFD51D /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		4665C6271E1F15F600FFD51D /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		4665C6281E1F15F600FFD51D /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		4665C62D1E1F165700FFD51D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		4665C62F1E1F165E00FFD51D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		4665C6311E1F166600FFD51D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4665C6331E1F16D900FFD51D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4665C6351E1F16F000FFD51D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +110,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4665C6361E1F16F000FFD51D /* libsqlite3.tbd in Frameworks */,
+				4665C6341E1F16D900FFD51D /* libz.tbd in Frameworks */,
+				4665C63D1E1F17B500FFD51D /* AWSCore.framework in Frameworks */,
+				4665C6321E1F166600FFD51D /* SystemConfiguration.framework in Frameworks */,
+				4665C6301E1F165E00FFD51D /* SafariServices.framework in Frameworks */,
+				4665C6391E1F17B500FFD51D /* AWSDynamoDB.framework in Frameworks */,
+				4665C62E1E1F165700FFD51D /* AddressBook.framework in Frameworks */,
 				4665C61D1E1F128F00FFD51D /* AWSCognito.framework in Frameworks */,
+				4665C62B1E1F15F600FFD51D /* GoogleSignInDependencies.framework in Frameworks */,
+				4665C62C1E1F15F600FFD51D /* GoogleSymbolUtilities.framework in Frameworks */,
+				4665C62A1E1F15F600FFD51D /* GoogleSignIn.framework in Frameworks */,
+				4665C6291E1F15F600FFD51D /* GoogleAppUtilities.framework in Frameworks */,
+				4665C6371E1F17B500FFD51D /* AWSS3.framework in Frameworks */,
 				4665C61E1E1F128F00FFD51D /* AWSCore.framework in Frameworks */,
 				4665C61C1E1F128F00FFD51D /* AWSDynamoDB.framework in Frameworks */,
+				4665C63B1E1F17B500FFD51D /* AWSCognito.framework in Frameworks */,
 				4665C61B1E1F128F00FFD51D /* AWSS3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +150,7 @@
 		4665C5DC1E1F118600FFD51D = {
 			isa = PBXGroup;
 			children = (
+				4665C6231E1F15E600FFD51D /* GoogleSignIn.bundle */,
 				4665C6161E1F122900FFD51D /* Frameworks */,
 				4665C5E71E1F118600FFD51D /* Instagram */,
 				4665C5FC1E1F118600FFD51D /* InstagramTests */,
@@ -111,6 +172,7 @@
 		4665C5E71E1F118600FFD51D /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				4665C6201E1F150400FFD51D /* GoogleService-Info.plist */,
 				4665C5E81E1F118600FFD51D /* AppDelegate.swift */,
 				4665C5EA1E1F118600FFD51D /* ViewController.swift */,
 				4665C5EC1E1F118600FFD51D /* Main.storyboard */,
@@ -143,6 +205,15 @@
 		4665C6161E1F122900FFD51D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4665C6351E1F16F000FFD51D /* libsqlite3.tbd */,
+				4665C6331E1F16D900FFD51D /* libz.tbd */,
+				4665C6311E1F166600FFD51D /* SystemConfiguration.framework */,
+				4665C62F1E1F165E00FFD51D /* SafariServices.framework */,
+				4665C62D1E1F165700FFD51D /* AddressBook.framework */,
+				4665C6251E1F15F600FFD51D /* GoogleAppUtilities.framework */,
+				4665C6261E1F15F600FFD51D /* GoogleSignIn.framework */,
+				4665C6271E1F15F600FFD51D /* GoogleSignInDependencies.framework */,
+				4665C6281E1F15F600FFD51D /* GoogleSymbolUtilities.framework */,
 				4665C6171E1F128F00FFD51D /* AWSS3.framework */,
 				4665C6181E1F128F00FFD51D /* AWSDynamoDB.framework */,
 				4665C6191E1F128F00FFD51D /* AWSCognito.framework */,
@@ -161,6 +232,7 @@
 				4665C5E11E1F118600FFD51D /* Sources */,
 				4665C5E21E1F118600FFD51D /* Frameworks */,
 				4665C5E31E1F118600FFD51D /* Resources */,
+				4665C63F1E1F17B500FFD51D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4665C5F31E1F118600FFD51D /* LaunchScreen.storyboard in Resources */,
+				4665C6241E1F15E600FFD51D /* GoogleSignIn.bundle in Resources */,
+				4665C6211E1F150400FFD51D /* GoogleService-Info.plist in Resources */,
 				4665C5F01E1F118600FFD51D /* Assets.xcassets in Resources */,
 				4665C5EE1E1F118600FFD51D /* Main.storyboard in Resources */,
 			);
@@ -441,9 +515,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = sdn.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Instagram/Instagram-Bridging-Header.h";
@@ -459,9 +538,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = sdn.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Instagram/Instagram-Bridging-Header.h";
