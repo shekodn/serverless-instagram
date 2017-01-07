@@ -40,6 +40,7 @@
 		46DC447E1E21745E00B3362E /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC447D1E21745E00B3362E /* Follower.swift */; };
 		46DC44811E21747A00B3362E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC44801E21747A00B3362E /* User.swift */; };
 		46DC44831E219CB400B3362E /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC44821E219CB400B3362E /* DatabaseService.swift */; };
+		46DC44851E21ACA900B3362E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC44841E21ACA900B3362E /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		46DC447D1E21745E00B3362E /* Follower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		46DC44801E21747A00B3362E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		46DC44821E219CB400B3362E /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		46DC44841E21ACA900B3362E /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				46DC447D1E21745E00B3362E /* Follower.swift */,
 				46DC44801E21747A00B3362E /* User.swift */,
 				46DC44821E219CB400B3362E /* DatabaseService.swift */,
+				46DC44841E21ACA900B3362E /* UserViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46DC44811E21747A00B3362E /* User.swift in Sources */,
+				46DC44851E21ACA900B3362E /* UserViewController.swift in Sources */,
 				46DC44831E219CB400B3362E /* DatabaseService.swift in Sources */,
 				4665C5EB1E1F118600FFD51D /* ViewController.swift in Sources */,
 				46DC447E1E21745E00B3362E /* Follower.swift in Sources */,
