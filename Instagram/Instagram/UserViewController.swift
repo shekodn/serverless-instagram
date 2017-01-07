@@ -36,8 +36,7 @@ class UserViewController: UITableViewController
             if (dynamoTask.result != nil) {
                 self.users.removeAll(keepingCapacity: true)
                 
-                
-                
+        
                 let dynamoResults = dynamoTask.result as! AWSDynamoDBPaginatedOutput
                 
                 for user in dynamoResults.items as! [User] {
@@ -64,7 +63,7 @@ class UserViewController: UITableViewController
                     }
                 }
                 
-                DispatchQueue.main.asynchronously(execute: {
+                DispatchQueue.main.sync(execute: {
                     self.tableView.reloadData()
                     self.refresher.endRefreshing()
                 })
