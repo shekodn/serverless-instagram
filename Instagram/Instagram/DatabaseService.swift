@@ -28,9 +28,13 @@ class DatabaseService
             
             if (task.result != nil) {
                 
-                let result = task.result as! AWSDynamoDBPaginatedOutput
+                //let result = task.result as! AWSDynamoDBPaginatedOutput
                 
-                return result.items as! [Follower]
+                if let result = task.result{
+                    return result.items as! [Follower] as AnyObject?
+
+                }
+                
             }
             
             return nil
@@ -52,8 +56,13 @@ class DatabaseService
             }
             
             if (task.result != nil) {
-                let result = task.result as! AWSDynamoDBPaginatedOutput
-                return result.items as! [Follower]
+                //let result = task.result as! AWSDynamoDBPaginatedOutput
+               
+                if let result = task.result{
+                    
+                    return result.items as! [Follower] as AnyObject?
+
+                }
             }
             
             return nil
