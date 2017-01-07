@@ -58,15 +58,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, 
               
                 let syncClient = AWSCognito.default()
                 let dataset = syncClient?.openOrCreateDataset("instagramDataSet")
-                
-                
                 dataset?.setString(user.profile.email, forKey: "email")
                 dataset?.setString(user.profile.name, forKey: "name")
                 
                 let result = dataset?.synchronize()
                 
-                
-
+                print("Data set was synched" + "\n")
                 
                 result?.continue({ (task:AWSTask) -> AnyObject? in
                     if task.error != nil {

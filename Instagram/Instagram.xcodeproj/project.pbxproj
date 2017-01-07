@@ -37,6 +37,8 @@
 		4665C63C1E1F17B500FFD51D /* AWSCognito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C6191E1F128F00FFD51D /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4665C63D1E1F17B500FFD51D /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C61A1E1F128F00FFD51D /* AWSCore.framework */; };
 		4665C63E1E1F17B500FFD51D /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4665C61A1E1F128F00FFD51D /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46DC447E1E21745E00B3362E /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC447D1E21745E00B3362E /* Follower.swift */; };
+		46DC44811E21747A00B3362E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC44801E21747A00B3362E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		4665C6311E1F166600FFD51D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4665C6331E1F16D900FFD51D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4665C6351E1F16F000FFD51D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		46DC447D1E21745E00B3362E /* Follower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		46DC44801E21747A00B3362E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,8 @@
 				4665C5F11E1F118600FFD51D /* LaunchScreen.storyboard */,
 				4665C5F41E1F118600FFD51D /* Info.plist */,
 				4665C61F1E1F12F400FFD51D /* Instagram-Bridging-Header.h */,
+				46DC447D1E21745E00B3362E /* Follower.swift */,
+				46DC44801E21747A00B3362E /* User.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -360,7 +366,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DC44811E21747A00B3362E /* User.swift in Sources */,
 				4665C5EB1E1F118600FFD51D /* ViewController.swift in Sources */,
+				46DC447E1E21745E00B3362E /* Follower.swift in Sources */,
 				4665C5E91E1F118600FFD51D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +634,7 @@
 				4665C60F1E1F118600FFD51D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4665C6101E1F118600FFD51D /* Build configuration list for PBXNativeTarget "InstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -634,6 +643,7 @@
 				4665C6121E1F118600FFD51D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4665C6131E1F118600FFD51D /* Build configuration list for PBXNativeTarget "InstagramUITests" */ = {
 			isa = XCConfigurationList;
@@ -642,6 +652,7 @@
 				4665C6151E1F118600FFD51D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
