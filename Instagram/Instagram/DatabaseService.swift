@@ -27,7 +27,9 @@ class DatabaseService
             }
             
             if (task.result != nil) {
+                
                 let result = task.result as! AWSDynamoDBPaginatedOutput
+                
                 return result.items as! [Follower]
             }
             
